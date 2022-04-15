@@ -20,8 +20,8 @@ build:
 	../gradlew distDocker
 
 localbuild:
-	GOOS=linux GOARCH=amd64 go build -o proxy -a  -ldflags '-extldflags "-static"' ../main/proxy.go
-	docker build -t $(IMG) .
+	GOOS=linux GOARCH=arm64 go build -o proxy -a  -ldflags '-extldflags "-static"' ../main/proxy.go
+	docker build --platform linux/arm64 -t $(IMG) .
 	docker tag $(IMG) whisk/$(IMG)
 
 push: build
