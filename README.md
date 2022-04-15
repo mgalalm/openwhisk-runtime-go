@@ -1,3 +1,4 @@
+
 <!--
 #
 # Licensed to the Apache Software Foundation (ASF) under one or more
@@ -46,3 +47,25 @@ This repository contains both the OpenWhisk runtime for Golang Actions, as well 
 
 # License
 [Apache 2.0](LICENSE.txt)
+
+
+Support raspberrypi with aarch64 OS
+
+# How to build the runtime image locally
+
+```sh
+cd openwhisk-runtime-go 
+make localbuild
+```
+
+That will create image with name of `whisk/action-golang-v1.17:latest`
+Then you can create an image of your docker namespace
+
+```sh
+image tag whisk/action-golang-v1.17:latest mgalalm/action-golang-v1.17:rpi
+```
+Push the image to docker hub
+```sh
+docker push mgalalm/action-golang-v1.17:rpi
+```
+now you can use it as a runtime
