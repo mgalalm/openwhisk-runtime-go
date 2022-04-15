@@ -51,6 +51,9 @@ This repository contains both the OpenWhisk runtime for Golang Actions, as well 
 
 Support raspberrypi with aarch64 OS
 
+# Install Go 1.17.9 
+Follow these instructions 1.17.9 https://www.jeremymorgan.com/tutorials/raspberry-pi/install-go-raspberry-pi/ 
+
 # How to build the runtime image locally
 
 ```sh
