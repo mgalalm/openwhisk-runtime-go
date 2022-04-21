@@ -48,5 +48,5 @@ ADD lib/launcher.go /lib/launcher.go
 ENV OW_COMPILER=/bin/compile
 ENV OW_LOG_INIT_ERROR=1
 ENV OW_WAIT_FOR_ACK=1
-ENV OW_EXECUTION_ENV=openwhisk/action-golang-v1.17
+ENV OW_EXECUTION_ENV=mgalalm/action-golang-v1.17:rpi
 ENTRYPOINT [ "/bin/proxy" ]
