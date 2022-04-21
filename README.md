@@ -67,7 +67,7 @@ That will create image with name of `whisk/action-golang-v1.17:latest`
 Then you can create an image of your docker namespace
 
 ```sh
-image tag whisk/action-golang-v1.17:latest mgalalm/action-golang-v1.17:rpi
+docker image tag whisk/action-golang-v1.17:latest mgalalm/action-golang-v1.17:rpi
 ```
 Push the image to docker hub
 ```sh
